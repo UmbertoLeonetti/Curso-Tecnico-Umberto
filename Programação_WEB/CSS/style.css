@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+Body {Background-color: #46f7bc;}
+h3 {font-size: 45px;  font-family: Britanic Bold}
+
+h2 {
+    color: rgb(153, 40, 32);
+    font-style: italic;
+   }
+
+textarea {
+    
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  select {
+    padding: 4px 20px;
+  }
+  
+  option {
+    height: 30px;
+    padding: 5px 4px;
+    color: red;
+  }
+  fieldset {
+    border: 2px #02300a solid;
+    border-radius: 10px;
+  }
+    
+  optgroup {
+    color: blue;
+  }
+  label {
+    height: 10px;
+    padding: 5px 4px;
+    background-color: yellow;
+  }
+  p {font-weight:bold;}  

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script type="text/javascript"src="MeuPrograma.js"></script>
+    <title>index</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <legend>
+            <h3>
+                DADOS PESSOAIS
+            </h3>
+        </legend>
+        <form action="" method="post">
+            Nome:
+            <input type="text" name="nome" size="50" placeholder="Digite seu nome aqui">
+            Sobrenome:
+            <input type="text" name="sobrenome" size="50" placeholder="Digite seu sobrenome aqui">
+            <br><br>
+            Nascimento:
+            <input type="text" name="nascimento" placeholder="dd/mm/aaaa" maxlength=5>
+            <br><br>
+            RG:
+            <input type="text" name="rg" size="50" placeholder="Digite seu RG aqui">
+            <br><br>
+            CPF:
+            <input type="text" name="cpf" size="50" placeholder="Digite seu CPF aqui">
+            <br><br>
+            Sexo:
+            <select name="sexo" size=1>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+            <br><br>
+            <label>Situação Civil:</label>
+            <label><input type="radio" name="sou" value"solteiro"checked="checked">Solteiro(a)</label>
+            <label><input type="radio" name="sou" value"casado"checked="checked">Casado(a)</label>
+            <label><input type="radio" name="sou" value"viúvo"checked="checked">Viúvo(a)</label>
+        </form>
+    
+    <fieldset>
+        <legend>
+            <h2>
+                ENDEREÇO
+            </h2>
+        </legend>
+        <form action="" method="post">
+            Rua:
+            <input type="text" name="rua" size="50" placeholder="Digite nome da rua aqui">
+            Numero:
+            <input type="text" name="numero" size="50" placeholder="Digite o número aqui">
+            <br><br>
+            Bairro:
+            <input type="text" name="bairro" size="50" placeholder="Digite o bairro aqui">
+            <br><br>
+            Estado / Cidade:
+            <select name="estado" size=1>
+                <option>SC</option>
+                <optgroup label="cidade">
+                    <option>Blumenau</option>
+                    <option>Gaspar</option></optgroup>
+                <option>BA</option>
+                <optgroup label="cidade">
+                    <option>Salvador</option>
+                    <option>Porto Seguro</option></optgroup>
+                <option>GO</option>
+                <optgroup label="cidade">
+                    <option>Goiânia</option>
+                    <option>Luziânia</option></optgroup>
+                <option>SP</option>
+                <option>MT</option>
+            </select>
+            <br><br>
+            Cidade:
+            <input type="text" name="cidade" size="50" placeholder="Digite a cidade aqui">
+            <br><br>
+            CEP:
+            <input type="text" name="cep" size="50" placeholder="Digite o cep aqui">
+            </textarea>
+            <br><br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h4>
+                LOGIN
+            </h4>
+        </legend>
+        <form action="" method="post">
+            Email:
+            <input type="text" name="email" size="50" placeholder="Digite seu email aqui">
+            <br><br>
+            Imagem de perfil:
+            <input name="imagem" type="file" id="ifsc">
+            <br><br>
+            Usuário:
+            <input type="text" name="usuário" size="50" placeholder="Digite seu usuário aqui">
+            <br><br>
+            Senha:
+            <input type="text" name="senha" size="50" placeholder="Digite sua senha aqui">
+            <br><br>
+            <button type="button" class="btn btn-success">Enviar</button>
+            <button type="button" class="btn btn-secondary">Apagar</button>
+            
+        </form>
+    </fieldset>
+</body>
+ <button type = "button" class>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h3 {font-size: 45px;  font-family: Britanic Bold}
+
+h2 {
+    color: rgb(153, 40, 32);
+    font-style: italic;
+   }
+  select {
+    padding: 4px 20px;
+  }
+  
+  option {
+    height: 30px;
+    padding: 5px 4px;
+    color: red;
+  }
+    
+  optgroup {
+    color: blue;
+}
+.u-containProse {
+    margin-left: 10rem;
+    margin-right: 20em;
+    max-width: 40em;
+}
