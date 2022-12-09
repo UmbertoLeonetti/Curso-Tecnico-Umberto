@@ -1,0 +1,19 @@
+/*arquivo CSS*/
+.root {
+     -fx-background-color: DFE3E9;
+     -fx-image-orientation: url("/Imagens/K3_logo.png");
+     -fx-image-orientation-height: 500;
+     -fx-image-orientation-width: 700;
+}
+
+.glyph-icon{
+	-fx-fill: red;
+}
+
+.table-view {
+    -fx-base: #00428c;
+    -fx-control-inner-background: DFE3E9;
+    -fx-padding: 5;
+}
+
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlesTelas.ControleAlterarItem">
+   <children>
+      <GridPane layoutX="54.0" layoutY="146.0" prefHeight="60.0" prefWidth="415.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="106.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="313.0" minWidth="10.0" prefWidth="309.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblDescricao" prefHeight="25.0" prefWidth="110.0" text="Descrição(50):">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescricao" accessibleRole="COMBO_BOX" prefHeight="25.0" prefWidth="291.0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" />
+            <Label fx:id="lblFornecedor" text="Fornecedor:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFornecedor" prefHeight="13.0" prefWidth="309.0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="55.0" layoutY="203.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="105.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="95.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblMarca" text="Marca:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMarca" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" />
+            <Label fx:id="lblQuantAtual" text="Quant. Atual:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQuantAtual" editable="false" prefHeight="25.0" prefWidth="85.0" promptText="0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lblEstMin" prefHeight="25.0" prefWidth="105.0" text="Estoque Mín.:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEstMin" prefHeight="25.0" prefWidth="85.0" promptText="0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="262.0" layoutY="203.0" prefHeight="90.0" prefWidth="209.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblLocal" text="Local:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLocal" prefHeight="25.0" prefWidth="111.0" promptText="A" style="-fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lblEstMax" alignment="TOP_RIGHT" contentDisplay="RIGHT" text="Estoque Máx.:" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEstMax" prefHeight="25.0" prefWidth="85.0" promptText="0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lblReferencia" text="Referência:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtReferencia" prefHeight="25.0" prefWidth="205.0" promptText="1SAM201906R1" style="-fx-background-radius: 30;" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="56.0" layoutY="291.0" prefHeight="30.0" prefWidth="415.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblDataEntrada" text="Data de Entrada:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDataEntrada" editable="false" prefHeight="13.0" prefWidth="309.0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="55.0" layoutY="324.0" prefHeight="30.0" prefWidth="415.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="131.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="178.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="96.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblEstadoItem" text="Estado do Item:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFoto" text="Foto:" GridPane.columnIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbInativo" contentDisplay="CENTER" mnemonicParsing="true" text="Inativo" textFill="#e0e0e0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="estado" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbAtivo" contentDisplay="RIGHT" mnemonicParsing="false" text="Ativo" textFill="#e0e0e0" toggleGroup="$estado" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <ImageView fx:id="imgVisualizarFoto" fitHeight="28.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+               <image>
+                  <Image url="@../Imagens/Visualizar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Circle fill="#bcc9d9" layoutX="260.0" layoutY="47.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="btSalvar" layoutX="127.0" layoutY="409.0" mnemonicParsing="false" onAction="#onClickSalvar" prefHeight="30.0" prefWidth="119.0" style="-fx-background-radius: 30; -fx-background-color: BCC9D9;" text="Salvar Alteração">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgTeste" fitHeight="52.0" fitWidth="54.0" layoutX="234.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Itens.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e0e0e0" layoutX="123.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Item">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCodigo" layoutX="55.0" layoutY="360.0" text="Código:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCod" editable="false" layoutX="122.0" layoutY="360.0" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 30;" />
+      <Button fx:id="btCancelar" layoutX="262.0" layoutY="409.0" mnemonicParsing="false" onAction="#onClickCancelar" prefHeight="30.0" prefWidth="119.0" style="-fx-background-radius: 30; -fx-background-color: BCC9D9;" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

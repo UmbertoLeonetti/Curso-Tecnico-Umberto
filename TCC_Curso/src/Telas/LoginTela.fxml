@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlesTelas.ControleLogin">
+   <children>
+      <ImageView fitHeight="244.0" fitWidth="436.0" layoutX="452.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="323.67401123046875" AnchorPane.leftAnchor="452.0" AnchorPane.rightAnchor="478.0" AnchorPane.topAnchor="192.0">
+         <image>
+            <Image url="@../Imagens/K3_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblSenha" contentDisplay="CENTER" layoutX="492.0" layoutY="533.0" text="Senha:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLogin" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="484.0" prefHeight="25.0" prefWidth="89.0" text="Login:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLogin" layoutX="568.0" layoutY="484.0" prefHeight="34.0" prefWidth="243.0" style="-fx-background-radius: 30;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pfSenha" layoutX="569.0" layoutY="530.0" prefHeight="37.0" prefWidth="243.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" />
+      <Button fx:id="btnEntrar" blendMode="SRC_ATOP" layoutX="634.0" layoutY="585.0" mnemonicParsing="false" onAction="#onClickEntrar" prefHeight="32.0" prefWidth="98.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text="Entrar" textAlignment="CENTER" textFill="#171010" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnCadastroUser" alignment="TOP_LEFT" blendMode="SRC_ATOP" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onClickCadastroUser" prefHeight="41.0" prefWidth="223.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text="Cadastro de Usuário" textAlignment="CENTER" textFill="#171010">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="32.0" fitWidth="48.0" layoutX="195.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/AddUser.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

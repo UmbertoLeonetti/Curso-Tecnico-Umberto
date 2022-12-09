@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlesTelas.ControleEstoque">
+   <children>
+      <Button fx:id="btnCadastroItem" alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="1153.0" layoutY="42.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onClickbtnCadastrarItem" prefHeight="39.0" prefWidth="201.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text="Cadastro de Item" textAlignment="CENTER" textFill="#171010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="95.0" fitWidth="212.0" layoutX="20.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/K3_logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00428c" height="78.0" layoutX="221.0" layoutY="12.0" stroke="#00428c" strokeType="INSIDE" width="300.0" />
+      <GridPane layoutX="233.0" layoutY="28.0" prefHeight="60.0" prefWidth="240.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="48.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="168.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblColuna" prefHeight="27.0" prefWidth="61.0" text="Coluna:" GridPane.rowIndex="1">
+               <textFill>
+                  <RadialGradient centerX="0.961111111111111" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#dfe3e9" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBuscar" prefHeight="26.0" prefWidth="52.0" text="Buscar:">
+               <textFill>
+                  <RadialGradient centerX="0.961111111111111" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#dfe3e9" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBuscar" prefHeight="29.0" prefWidth="184.0" GridPane.columnIndex="1" />
+            <ComboBox fx:id="cbColuna" prefHeight="19.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00428c" height="78.0" layoutX="839.0" layoutY="12.0" stroke="#00428c" strokeType="INSIDE" width="300.0" />
+      <GridPane layoutX="849.0" layoutY="41.0" prefHeight="30.0" prefWidth="133.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="139.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8da9b1" height="607.0" layoutX="53.0" layoutY="92.0" stroke="#8da9b1" strokeType="INSIDE" width="1252.0" />
+      <TableView fx:id="tbviewEstoque" layoutX="72.0" layoutY="127.0" prefHeight="535.0" prefWidth="1214.0" style="-fx-border-width: 0;" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="tColumnCod" prefWidth="49.0" text="Código" />
+          <TableColumn fx:id="tColumnData" prefWidth="119.0" text="Incluido em:" />
+            <TableColumn fx:id="tColumnDescricao" prefWidth="288.0" text="Descrição" />
+            <TableColumn fx:id="tColumnMarca" minWidth="0.0" prefWidth="154.0" text="Marca" />
+            <TableColumn fx:id="tColumnFornecedor" prefWidth="209.0" text="Fornecedor" />
+            <TableColumn fx:id="tColumnRef" minWidth="0.0" prefWidth="87.0" text="Referência" />
+            <TableColumn fx:id="tColumnQuantidade" prefWidth="46.0" text="Quant." />
+            <TableColumn fx:id="tColumnEstMin" prefWidth="53.0" text="Est. Mín." />
+            <TableColumn fx:id="tColumnEstMax" prefWidth="56.0" text="Est. Máx." />
+            <TableColumn fx:id="tColumnLocal" minWidth="0.0" prefWidth="55.0" text="Local" />
+            <TableColumn fx:id="tColumnEstado" minWidth="0.0" prefWidth="75.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Text fill="#031e46" layoutX="625.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00428c" height="78.0" layoutX="530.0" layoutY="12.0" stroke="#00428c" strokeType="INSIDE" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e0" height="25.0" layoutX="530.0" layoutY="2.0" stroke="#00428c" strokeType="INSIDE" width="300.0" />
+      <Label layoutX="594.0" layoutY="2.0" prefHeight="27.0" prefWidth="181.0" text="Período de Consulta" textAlignment="CENTER" textFill="#00428c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e0" height="25.0" layoutX="839.0" layoutY="2.0" stroke="#00428c" strokeType="INSIDE" width="300.0" />
+      <Label layoutX="926.0" layoutY="2.0" prefHeight="27.0" prefWidth="133.0" text="Gerar Relatório" textAlignment="CENTER" textFill="#00428c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="543.0" layoutY="28.0" prefHeight="60.0" prefWidth="248.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="87.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="170.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblDataFInal" prefHeight="26.0" prefWidth="88.0" text="Data Final:" GridPane.rowIndex="1">
+               <textFill>
+                  <RadialGradient centerX="0.961111111111111" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#dfe3e9" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dpDataInicial" prefHeight="26.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin>
+            </DatePicker>
+            <DatePicker fx:id="dpDataFinal" prefHeight="25.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin></DatePicker>
+            <Label fx:id="lblDataInicial" prefHeight="30.0" prefWidth="96.0" text="Data Inicial:">
+               <textFill>
+                  <RadialGradient centerX="0.961111111111111" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#dfe3e9" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e0" height="25.0" layoutX="221.0" layoutY="2.0" stroke="#00428c" strokeType="INSIDE" width="300.0" AnchorPane.bottomAnchor="673.0" AnchorPane.topAnchor="2.0" />
+      <Label layoutX="294.0" layoutY="2.0" prefHeight="25.0" prefWidth="150.0" text="Pesquisa de Item" textAlignment="CENTER" textFill="#00428c" AnchorPane.bottomAnchor="673.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCadastroItem" fitHeight="30.0" fitWidth="37.0" layoutX="1310.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Itens.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUsuarioLogado" alignment="CENTER" contentDisplay="RIGHT" layoutX="1165.0" layoutY="9.0" prefHeight="27.0" prefWidth="144.0" textAlignment="RIGHT" textFill="#5b5151">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgUsuarioLogado" fitHeight="31.0" fitWidth="30.0" layoutX="1310.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Usuario.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBuscar" fitHeight="39.0" fitWidth="42.0" layoutX="478.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Buscar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEditar" alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="1168.0" layoutY="664.0" mnemonicParsing="false" onAction="#onClickEditar" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text="Editar Item" textAlignment="CENTER" textFill="#171010">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgEditarItem" fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/EditarItem.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnEditarEstoque" alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="977.0" layoutY="664.0" mnemonicParsing="false" onAction="#onClickEditarEstoque" prefHeight="30.0" prefWidth="188.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text="Editar Estoque - Item" textAlignment="CENTER" textFill="#171010">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgEditarEstoque" fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/Itens.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="imgBuscarData" fitHeight="39.0" fitWidth="42.0" layoutX="793.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Buscar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAtualizaEstoque" alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="73.0" layoutY="664.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="211.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: #031e46;" text="Atualizar Tela de Estoque " textAlignment="CENTER" textFill="#bcbfc3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgAtualizarEstoque" fitHeight="21.0" fitWidth="21.0" layoutX="255.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/AtualizarEstoque.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHistMovimentacao" alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="691.0" layoutY="664.0" mnemonicParsing="false" onAction="#onClickHistMovimentacao" prefHeight="31.0" prefWidth="281.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text="Histórico de Movimentação - Item" textAlignment="CENTER" textFill="#171010">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgHistMovimentacao" fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/EditarEstoqueItem.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnImprimir" alignment="TOP_LEFT" blendMode="SRC_ATOP" layoutX="929.0" layoutY="41.0" mnemonicParsing="false" onAction="#onClickImprimir" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: BCC9D9;" text=" Imprimir" textAlignment="CENTER" textFill="#171010">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgImprimir" fitHeight="21.0" fitWidth="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/Imprimir.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

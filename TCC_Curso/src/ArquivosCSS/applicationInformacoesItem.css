@@ -1,0 +1,71 @@
+/*arquivo CSS*/
+.root {
+     -fx-background-color: #2D3F5A
+}
+
+
+.label {
+	-fx-font-style: normal;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	/*-fx-line-height: 37px;*/
+    -fx-font-family: Red Rose;
+    -fx-text-fill: E0E0E0
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.glyph-icon{
+	-fx-fill: red;
+}
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.35);
+    -fx-background-radius: 30;
+	-fx-border: 1;
+	-fx-border-color: #333333;
+	-fx-box-sizing: border-box;
+	-fx-border-radius: 30px;
+}
+
+.text{
+	-fx-font-style: normal;
+	-fx-font-weight: normal;
+	/*-fx-font-size: 36px;*/
+	/*-fx-line-height: 37px;*/
+   -fx-font-family: Red Rose;
+   -fx-text-fill: E0E0E0
+ }
+.button {
+	-fx-text-fill: #01111B;
+	-fx-font-size: 14px;
+	-fx-position: absolute;
+	-fx-width: 151px;
+	-fx-height: 63px;
+	-fx-left: 219px;
+	-fx-top: 540px;
+	-fx-background: #BCC9D9;
+}
+
+ 
+

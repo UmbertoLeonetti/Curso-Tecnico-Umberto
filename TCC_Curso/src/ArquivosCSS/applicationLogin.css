@@ -1,0 +1,62 @@
+/*arquivo CSS*/
+.root {
+     -fx-background-color: DFE3E9;
+     -fx-image-orientation: url("/Imagens/K3_logo.png");
+     -fx-image-orientation-height: 500;
+     -fx-image-orientation-width: 700;
+}
+
+.label {
+	-fx-font-style: normal;
+	-fx-font-weight: normal;
+	-fx-font-size: 22px;
+	/*-fx-line-height: 37px;*/
+    -fx-font-family: Red Rose;
+    -fx-text-fill: #828282;
+}
+
+.label-bright {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.glyph-icon{
+	-fx-fill: red;
+}
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.text-field {
+    -fx-background: rgba(255, 255, 255, 0.35);
+    -fx-background-radius: 30;
+	-fx-border: 1;
+	-fx-border-color: #828282;
+	-fx-box-sizing: border-box;
+	-fx-border-radius: 30px;
+}
+
+    
+ .passwordfield{
+ 	-fx-background: rgba(255, 255, 255, 0.35);
+    -fx-background-radius: 30;
+	-fx-border: 1;
+	-fx-border-color: #828282;
+	-fx-border-radius: 30px;
+ }
+ 
+
