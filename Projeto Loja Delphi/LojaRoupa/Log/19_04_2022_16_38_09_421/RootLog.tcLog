@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="child list">
+				<Node name="child0">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child6">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427662"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427662"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427662"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Aparecer Mensagem Excluir"/>
+								</Node>
+								<Prp name="id" type="S" value="{21C2ACB1-127C-45E9-89AA-0B534D9C7391}"/>
+								<Prp name="index" type="I" value="6"/>
+								<Prp name="name" type="S" value="Aparecer Mensagem Excluir Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child5">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427662"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427662"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427662"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Aparecer Mensagem Adicionar"/>
+								</Node>
+								<Prp name="id" type="S" value="{CC1D7F30-C423-451B-A0DA-52F3DFDC32F4}"/>
+								<Prp name="index" type="I" value="5"/>
+								<Prp name="name" type="S" value="Aparecer Mensagem Adicionar Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child4">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427662"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427662"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427662"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Codigo sempre preenchido"/>
+								</Node>
+								<Prp name="id" type="S" value="{0CC3739E-C7D9-4CDB-8A12-7B5975115F7D}"/>
+								<Prp name="index" type="I" value="4"/>
+								<Prp name="name" type="S" value="Codigo sempre preenchido Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child3">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427662"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427546"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427546"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Setar Foco"/>
+								</Node>
+								<Prp name="id" type="S" value="{4A046976-DC19-45CE-91CF-0149559D2EBF}"/>
+								<Prp name="index" type="I" value="3"/>
+								<Prp name="name" type="S" value="Setar Foco Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child2">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427546"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427546"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427546"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Voltar para o Codigo"/>
+								</Node>
+								<Prp name="id" type="S" value="{B90C02AA-59C4-4A3B-B465-4F384A4F3179}"/>
+								<Prp name="index" type="I" value="2"/>
+								<Prp name="name" type="S" value="Voltar para o Codigo Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child1">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427546"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427546"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427546"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Valida Codigo do Cadastro"/>
+								</Node>
+								<Prp name="id" type="S" value="{A71C077D-38B5-433F-86AF-8763DBCE828A}"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="name" type="S" value="Valida Codigo do Cadastro Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages">
+												<Node name="row0">
+													<Prp name="time" type="D" value="44670.6932427546"/>
+													<Prp name="message" type="S" value="The element to be run was not specified."/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="index" type="I" value="0"/>
+													<Prp name="extended message" type="S" value=""/>
+												</Node>
+											</Node>
+											<Prp name="start time" type="D" value="44670.6932427546"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44670.6932427546"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run"/>
+											<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="name" type="S" value="Cadastro Produto"/>
+								</Node>
+								<Prp name="id" type="S" value="{A030FB49-0F3B-4FDA-926F-1ACA47DCE88B}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Cadastro Produto Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row7">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427662"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427662"/>
+								<Prp name="index" type="I" value="7"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Aparecer Mensagem Excluir"/>
+								<Prp name="details" type="S" value="{21C2ACB1-127C-45E9-89AA-0B534D9C7391}"/>
+							</Node>
+							<Node name="row6">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427662"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427662"/>
+								<Prp name="index" type="I" value="6"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Aparecer Mensagem Adicionar"/>
+								<Prp name="details" type="S" value="{CC1D7F30-C423-451B-A0DA-52F3DFDC32F4}"/>
+							</Node>
+							<Node name="row5">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427662"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427662"/>
+								<Prp name="index" type="I" value="5"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Codigo sempre preenchido"/>
+								<Prp name="details" type="S" value="{0CC3739E-C7D9-4CDB-8A12-7B5975115F7D}"/>
+							</Node>
+							<Node name="row4">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427546"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427662"/>
+								<Prp name="index" type="I" value="4"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Setar Foco"/>
+								<Prp name="details" type="S" value="{4A046976-DC19-45CE-91CF-0149559D2EBF}"/>
+							</Node>
+							<Node name="row3">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427546"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427546"/>
+								<Prp name="index" type="I" value="3"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Voltar para o Codigo"/>
+								<Prp name="details" type="S" value="{B90C02AA-59C4-4A3B-B465-4F384A4F3179}"/>
+							</Node>
+							<Node name="row2">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427546"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427546"/>
+								<Prp name="index" type="I" value="2"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Valida Codigo do Cadastro"/>
+								<Prp name="details" type="S" value="{A71C077D-38B5-433F-86AF-8763DBCE828A}"/>
+							</Node>
+							<Node name="row1">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.6932427546"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6932427546"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Cadastro Produto"/>
+								<Prp name="details" type="S" value="{A030FB49-0F3B-4FDA-926F-1ACA47DCE88B}"/>
+							</Node>
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44670.6931646296"/>
+										<Prp name="message" type="S" value="The element to be run specified in the 'Compra' test item was not found."/>
+										<Prp name="type" type="I" value="2"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44670.6931646296"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.6931646296"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="2"/>
+								<Prp name="name" type="S" value="Element to be run"/>
+								<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+						<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+						<Prp name="name" type="S" value="Compra"/>
+					</Node>
+					<Prp name="id" type="S" value="{4C449808-14AA-4AB2-96E3-9BA85BFCE4F0}"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="name" type="S" value="Compra Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+			</Node>
+			<Node name="log data">
+				<Node name="row0">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44670.6931646296"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44670.6932427662"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="status" type="I" value="2"/>
+					<Prp name="name" type="S" value="Compra"/>
+					<Prp name="details" type="S" value="{4C449808-14AA-4AB2-96E3-9BA85BFCE4F0}"/>
+				</Node>
+			</Node>
+			<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="name" type="S" value="LojaRoupa"/>
+		</Node>
+		<Prp name="data type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+	</Node>
+</Nodes>

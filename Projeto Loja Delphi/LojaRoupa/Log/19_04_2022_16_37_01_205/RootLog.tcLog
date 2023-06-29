@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="child list">
+				<Node name="child0">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="units">
+										<Prp name="unit 0" type="S" value="{0964DECC-EA5A-41EA-9E37-4B91298A7D3F}"/>
+									</Node>
+									<Node name="message 2">
+										<Prp name="date" type="D" value="44670.6924485069"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="owner id" type="I" value="-1"/>
+										<Prp name="color" type="I" value="-252645136"/>
+										<Prp name="id" type="I" value="2"/>
+										<Prp name="bkcolor" type="I" value="-252645136"/>
+										<Prp name="message" type="S" value="Script execution was interrupted."/>
+										<Prp name="picture" type="S" value=""/>
+										<Prp name="link" type="S" value=""/>
+										<Prp name="unit id" type="I" value="0"/>
+										<Prp name="remarks" type="S" value=""/>
+										<Prp name="type" type="I" value="3"/>
+										<Prp name="line no" type="I" value="8"/>
+										<Prp name="child index" type="I" value="-1"/>
+									</Node>
+									<Node name="children"/>
+									<Node name="message 1">
+										<Prp name="date" type="D" value="44670.6923787963"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="owner id" type="I" value="-1"/>
+										<Prp name="color" type="I" value="-252645136"/>
+										<Prp name="id" type="I" value="1"/>
+										<Prp name="bkcolor" type="I" value="-252645136"/>
+										<Prp name="message" type="S" value="Unknown name."/>
+										<Prp name="picture" type="S" value=""/>
+										<Prp name="link" type="S" value=""/>
+										<Prp name="unit id" type="I" value="0"/>
+										<Prp name="remarks" type="S" value="pCadastroCompra&#xA;Unit: &quot;tCadastro&quot; Line: 9 Column: 24."/>
+										<Prp name="type" type="I" value="3"/>
+										<Prp name="line no" type="I" value="8"/>
+										<Prp name="child index" type="I" value="-1"/>
+									</Node>
+									<Node name="message 0">
+										<Prp name="date" type="D" value="44670.6923787963"/>
+										<Prp name="priority" type="I" value="400"/>
+										<Prp name="owner id" type="I" value="-1"/>
+										<Prp name="color" type="I" value="-252645136"/>
+										<Prp name="id" type="I" value="0"/>
+										<Prp name="bkcolor" type="I" value="-252645136"/>
+										<Prp name="message" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\prog17\Desktop\Loja\Project1.exe&quot;. New instances will not be launched."/>
+										<Prp name="picture" type="S" value=""/>
+										<Prp name="link" type="S" value=""/>
+										<Prp name="unit id" type="I" value="0"/>
+										<Prp name="remarks" type="S" value=""/>
+										<Prp name="type" type="I" value="2"/>
+										<Prp name="line no" type="I" value="6"/>
+										<Prp name="child index" type="I" value="-1"/>
+									</Node>
+									<Prp name="project" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{0964DECC-EA5A-41EA-9E37-4B91298A7D3F}pCadastroCompra"/>
+									<Prp name="name" type="S" value="Test Log [tCadastro\pCadastroCompra]"/>
+									<Prp name="status" type="I" value="2"/>
+								</Node>
+								<Prp name="id" type="S" value="{5C3D1F3B-FF8D-47D5-B402-16876F256E5C}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Test Log [tCadastro\pCadastroCompra]"/>
+								<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44670.692448588"/>
+										<Prp name="message" type="S" value="The execution process was interrupted."/>
+										<Prp name="type" type="I" value="2"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44670.6923751042"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.692448588"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="2"/>
+								<Prp name="name" type="S" value="Element to be run [ Script\tCadastro - pCadastroCompra ]"/>
+								<Prp name="details" type="S" value="{5C3D1F3B-FF8D-47D5-B402-16876F256E5C}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+						<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+						<Prp name="name" type="S" value="Compra"/>
+					</Node>
+					<Prp name="id" type="S" value="{EF966830-8C11-44C7-BC6F-8DCEFEA72051}"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="name" type="S" value="Compra Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+			</Node>
+			<Node name="log data">
+				<Node name="row0">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44670.6923751042"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44670.692448588"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="status" type="I" value="2"/>
+					<Prp name="name" type="S" value="Compra"/>
+					<Prp name="details" type="S" value="{EF966830-8C11-44C7-BC6F-8DCEFEA72051}"/>
+				</Node>
+			</Node>
+			<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="name" type="S" value="LojaRoupa"/>
+		</Node>
+		<Prp name="data type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+	</Node>
+</Nodes>

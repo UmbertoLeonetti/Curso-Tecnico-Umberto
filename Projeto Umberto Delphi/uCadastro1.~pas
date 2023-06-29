@@ -1,0 +1,26 @@
+unit uCadastro1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, uCadastroPadrao, StdCtrls;
+
+type
+  TfrCadastroPadrao1 = class(TfrCadastroPadrao)
+    ComboBox1: TComboBox;
+    lbCor: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frCadastroPadrao1: TfrCadastroPadrao1;
+
+implementation
+
+{$R *.dfm}
+
+end.

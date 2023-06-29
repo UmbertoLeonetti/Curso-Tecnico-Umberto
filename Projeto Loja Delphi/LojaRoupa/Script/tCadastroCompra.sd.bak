@@ -1,0 +1,54 @@
+uses
+  uCadastroCompra,
+  uUtil;
+  
+procedure pCadastroCompraRoupa;
+begin
+  pCadastroCompra;
+  PAbrirTelaCompra;
+  pCadastroCampos('123', 'Nike', 'G', 'Algodão', '51', 'Marrom', 'Camiseta', '30', 'João', '61713336000196', '20102022');
+  pFecharTelaCompra;
+end;
+
+procedure pCampoCodigoVazio;
+begin
+  pAbrirTelaCompra;
+  pCampoCodigo;
+  pFecharTelaCompra;
+end;
+
+procedure pCarregaCampos;
+begin
+  pAbrirTelaCompra;
+  pCarregaCodigo;
+  pFecharTelaCompra
+end;
+
+procedure pMensagemAdicionar;
+begin
+  pAbrirTelaCompra;
+  pCadastroCampos('123', 'Nike', 'G', 'Algodão', '51', 'Marrom', 'Camiseta', '30', 'João', '61713336000196', '20102022');  
+  pMensagemAdic;
+  BuiltIn.Delay(2000);
+  pFecharTelaCompra;
+end;
+
+procedure pMensagemExcluir;
+begin
+  pAbrirTelaCompra;
+  pCadastroCampos('123', 'Nike', 'G', 'Algodão', '51', 'Marrom', 'Camiseta', '30', 'João', '61713336000196', '20102022');  
+  pMensagemExcl;
+  BuiltIn.Delay(2000);
+  pFecharTelaCompra;
+end;
+
+procedure pCompara;
+begin
+  pAbrirTelaCompra;  
+  pAbrirTelaConsultaCompra;
+  pExportarDadosCompra;
+  pComparaStringList();
+  BuiltIn.Delay(2000);
+  pFecharTelaConsultaCompra;
+  pFecharTelaCompra;
+end;

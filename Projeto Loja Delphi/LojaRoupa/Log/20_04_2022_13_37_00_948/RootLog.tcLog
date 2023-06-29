@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="units">
+				<Prp name="unit 0" type="S" value="{7E52FEA3-DDDC-423A-9683-2978BFE6CB52}"/>
+			</Node>
+			<Node name="message 2">
+				<Prp name="date" type="D" value="44671.5673876505"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="2"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'OK' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="0"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 13).&#xA;&#xA;Sys.Process('Project1').Window('TMessageForm', 'Project1', 1).Window('TButton', 'OK', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="48"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="children"/>
+			<Node name="message 1">
+				<Prp name="date" type="D" value="44671.5673864815"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="1"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="0"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TEdit', '', 7)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="47"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 0">
+				<Prp name="date" type="D" value="44671.5673840972"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="0"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Tela de Compra de Fornecedor' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="0"/>
+				<Prp name="remarks" type="S" value="A click at point (80, 28).&#xA;&#xA;Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal', 1).Window('TButton', 'Tela de Compra de Fornecedor', 4)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="18"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Prp name="project" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="test moniker" type="S" value="{0964DECC-EA5A-41EA-9E37-4B91298A7D3F}pCampoCodigoVazio"/>
+			<Prp name="name" type="S" value="Test Log [tCadastro\pCampoCodigoVazio]"/>
+			<Prp name="status" type="I" value="0"/>
+		</Node>
+		<Prp name="data type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+	</Node>
+</Nodes>

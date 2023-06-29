@@ -1,0 +1,33 @@
+uses
+  uCadastro,
+  uUtil;
+  
+procedure pCadastroCompraRoupa;
+begin
+  pCadastroCompra;
+  PAbrirTelaCompra;
+  pCadastroCampos;
+  pFecharTelaCompra;
+end;
+
+procedure pCampoCodigoVazio;
+begin
+  pAbrirTelaCompra;
+  pCampoCodigo;
+  pFecharTelaCompra
+end;
+
+procedure pMensagemAdicionar;
+begin
+  pMensagemAdic;
+end;
+
+procedure pMensagemExcluir;
+begin
+  pMensagemExc;
+end;
+
+procedure pCarregaCampos;
+begin
+  pCarregaCodigo;
+end;

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="child list">
+				<Node name="child0">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="units">
+										<Prp name="unit 0" type="S" value="{7E52FEA3-DDDC-423A-9683-2978BFE6CB52}"/>
+									</Node>
+									<Node name="children"/>
+									<Node name="message 0">
+										<Prp name="date" type="D" value="44670.5900440278"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="owner id" type="I" value="-1"/>
+										<Prp name="color" type="I" value="-252645136"/>
+										<Prp name="id" type="I" value="0"/>
+										<Prp name="bkcolor" type="I" value="-252645136"/>
+										<Prp name="message" type="S" value="The application &quot;C:\Users\prog17\Desktop\Loja\Project1.exe&quot; started."/>
+										<Prp name="picture" type="S" value=""/>
+										<Prp name="link" type="S" value=""/>
+										<Prp name="unit id" type="I" value="0"/>
+										<Prp name="remarks" type="S" value=""/>
+										<Prp name="type" type="I" value="0"/>
+										<Prp name="line no" type="I" value="2"/>
+										<Prp name="child index" type="I" value="-1"/>
+									</Node>
+									<Prp name="project" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+									<Prp name="test moniker" type="S" value="{7E52FEA3-DDDC-423A-9683-2978BFE6CB52}pAbrirProjeto"/>
+									<Prp name="name" type="S" value="Test Log [uCadastro\pAbrirProjeto]"/>
+									<Prp name="status" type="I" value="0"/>
+								</Node>
+								<Prp name="id" type="S" value="{BFBEE50C-C1B5-4E0C-87D4-A4049C2AFF07}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Test Log [uCadastro\pAbrirProjeto]"/>
+								<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row0">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44670.5900379745"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44670.5900459028"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Element to be run [ Script\uCadastro - pAbrirProjeto ]"/>
+								<Prp name="details" type="S" value="{BFBEE50C-C1B5-4E0C-87D4-A4049C2AFF07}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+						<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+					</Node>
+					<Prp name="id" type="S" value="{EC658CCB-1DD2-4E3B-AD97-911DCA8B1DD9}"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="name" type="S" value="ProjectTestItem1 Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+			</Node>
+			<Node name="log data">
+				<Node name="row0">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44670.5900379745"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44670.5900459028"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="status" type="I" value="0"/>
+					<Prp name="name" type="S" value="ProjectTestItem1"/>
+					<Prp name="details" type="S" value="{EC658CCB-1DD2-4E3B-AD97-911DCA8B1DD9}"/>
+				</Node>
+			</Node>
+			<Prp name="project key" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="test moniker" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="name" type="S" value="LojaRoupa"/>
+		</Node>
+		<Prp name="data type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+	</Node>
+</Nodes>

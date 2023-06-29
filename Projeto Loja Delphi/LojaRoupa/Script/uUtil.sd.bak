@@ -1,0 +1,36 @@
+procedure pAbrirProjeto;
+begin
+  TestedApps.Project1.Run();
+end;
+  
+procedure pFecharProjeto;
+begin
+  TestedApps.TerminateAll;
+end;
+
+procedure GeneralEvents_OnStartTest(Sender);
+begin
+  if not (Sys.WaitProcess('Project 1').Exists) then
+     pAbrirProjeto;
+end;
+
+procedure GeneralEvents_OnLogError(Sender; LogParams);
+begin
+  Log.Picture(Sys.Desktop.Picture(), 'Imagem do Erro');
+  Runner.Stop(False);                                             
+  pFecharProjeto;
+end;
+
+procedure pPrintTelaRelatorio;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+  p1.Window('TfrRelatorio', 'o', 1).Window('TGroupBox', 'Filtrar por Data e Campos').Window('TButton', 'Gerar Relatório').ClickButton;
+  w1 := p1.Window('TfrxPreviewForm', 'Visualizar').Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 1);
+  w1.VScroll.Pos := 0;
+  w1.Click(288, 42);
+  Log.Picture(Sys.Desktop.Picture(), 'Print Relatório');
+end;
+

@@ -1,0 +1,74 @@
+uses uUtil;
+
+procedure pCadastroCompra;
+begin
+  pAbrirProjeto;
+end;
+      
+
+procedure pMensagemAdicionar;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra').Window('TButton', 'Adicionar').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pAbrirTelaCompra;
+begin
+  Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Tela de Compra de Fornecedor').ClickButton;
+end;
+
+procedure pFecharTelaCompra;
+begin
+  Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Close;
+end;
+
+procedure pCadastroCampos;
+  var w1 : OleVariant;
+begin
+  w1 := Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1);
+  w1.Window('TEdit', '', 7).Keys('9[Tab]');
+  w1.Window('TEdit', '', 6).Keys('[Caps]A[Caps]didas[Tab]');
+  w1.Window('TEdit', '', 5).Keys('[Caps]42[Tab]');
+  w1.Window('TEdit', '', 4).Keys('J[Caps][BS][Caps]T[Caps]c=a[BS][BS][BS]actel[Tab]');
+  w1.Window('TEdit', '', 3).Keys('9201[Tab]');
+  w1.Window('TComboBox', '', 2).Window('Edit').Keys('[Caps]M[Tab]');
+  w1.Window('TComboBox', '', 1).Window('Edit').Keys('CAL[Tab]');
+  w1.Window('TEdit', '', 2).Keys('59[Tab]');
+  w1.Window('TEdit', '', 1).Keys('J[BS]C[Caps]arlos[Tab]');
+  w1.Window('TMaskEdit', '__.___.___/____-__').Keys('0102190101291091[Tab]');
+  w1.Window('TMaskEdit', '__/__/____').Keys('18042021');
+end;
+
+procedure pCampoCodigo;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TEdit', '', 7).Keys('[Tab]');
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pMensagemAdic;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra').Window('TButton', 'Adicionar').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pMensagemExcl;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra').Window('TButton', 'Excluir').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pCarregaCodigo;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Tela de Compra de Fornecedor').ClickButton;
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TEdit', '', 7).Keys('1[Tab]');
+end;

@@ -1,0 +1,81 @@
+procedure pCadastroVenda;
+begin
+  pAbrirProjeto;
+end;
+
+procedure pAbrirTelaVenda;
+begin
+  Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Tela de Venda Para Cliente').ClickButton;
+  BuiltIn.Delay(1000);     
+  Log.Picture(Sys.Desktop.Picture(), 'Imagem da Tela de Venda');             
+end;
+
+procedure pFecharTelaVenda;
+begin
+  Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Close;
+end;
+
+procedure pCadastroCampos(prCod: String, prMarca: String, prTamanho: String, prEstilo: String, prQuantidade: String, prCor: String, prTipo: String, prNomeCli: String, prCPF: String, prCEP: String);
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1);
+  w1.Window('TEdit', '', 6).Keys(prCod + '[Tab]');
+  w1.Window('TEdit', '', 5).Keys(prMarca + '[Tab]');
+  w1.Window('TEdit', '', 4).Keys(prTamanho + '[Tab]');
+  w1.Window('TEdit', '', 3).Keys(prEstilo + '[Tab]');
+  w1.Window('TEdit', '', 2).Keys(prQuantidade + '[Tab]');
+  w1.Window('TComboBox', '', 2).Window('Edit').Keys(prCor + '[Tab]');
+  w1.Window('TComboBox', '', 1).Window('Edit').Keys(prTipo + '[Tab]');
+  w1.Window('TEdit', '', 1).Keys(prNomeCli + '[Tab]');
+  w1.Window('TMaskEdit', '___.___.___-__').Keys(prCPF + '[Tab]');
+  w1.Window('TMaskEdit', '_____-___').Keys(prCEP);
+end;
+
+procedure pCampoCodigoVazio;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 6).Keys('i');
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pMensagemAdic;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TButton', 'Adicionar').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pMensagemExc;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TButton', 'Excluir').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pCarregaCodigo;
+begin
+  Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 6).Keys('1[Tab]');
+end;
+
+
+procedure pAbrirTelaConsultaVenda;
+begin
+  Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TButton', 'Consultar').ClickButton;
+  BuiltIn.Delay(1000);     
+  Log.Picture(Sys.Desktop.Picture(), 'Imagem da Tela de Consulta de Venda');             
+end;
+
+procedure pExportarDadosVenda;
+begin
+  Sys.Process('Project1').Window('TfrConsultaVenda', 'frConsultaVenda', 1).Window('TButton', 'Exportar Dados').ClickButton;
+end;
+
+procedure pComparaStringList;
+begin
+  Files.Compare('C:\Users\prog17\Desktop\Loja\Tabelas\StringListVendaAntiga.txt', 'C:\Users\prog17\Desktop\Loja\Tabelas\StringListVenda.txt');
+end;
+

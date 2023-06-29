@@ -1,0 +1,34 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Left = 192
+  Top = 117
+  Height = 334
+  Width = 478
+  object tbCadastro1: TTable
+    Left = 128
+    Top = 40
+    object tbCadastro1bdCodigo: TIntegerField
+      FieldName = 'bdCodigo'
+    end
+    object tbCadastro1bdNome: TStringField
+      FieldName = 'bdNome'
+      Size = 150
+    end
+    object tbCadastro1dbTamanho: TIntegerField
+      FieldName = 'dbTamanho'
+    end
+  end
+  object dsCadastro1: TDataSource
+    DataSet = tbCadastro1
+    Left = 200
+    Top = 40
+  end
+  object DataSource2: TDataSource
+    Left = 208
+    Top = 128
+  end
+  object Table2: TTable
+    Left = 128
+    Top = 128
+  end
+end

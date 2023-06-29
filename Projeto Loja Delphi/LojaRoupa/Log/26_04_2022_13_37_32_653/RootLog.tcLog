@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="children"/>
+			<Node name="message 9">
+				<Prp name="date" type="D" value="44677.5677875694"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="9"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TComboBox', '', 1).Window('Edit', '', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="28"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 8">
+				<Prp name="date" type="D" value="44677.5677854861"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="8"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TComboBox', '', 2).Window('Edit', '', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="27"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 7">
+				<Prp name="date" type="D" value="44677.5677830556"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="7"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 2)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="26"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 6">
+				<Prp name="date" type="D" value="44677.5677809722"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="6"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 3)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="25"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 5">
+				<Prp name="date" type="D" value="44677.5677788889"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="5"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 4)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="24"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 4">
+				<Prp name="date" type="D" value="44677.5677769213"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="4"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 5)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="23"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 3">
+				<Prp name="date" type="D" value="44677.5677749537"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="3"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'123[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 6)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="22"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 2">
+				<Prp name="date" type="D" value="44677.5677697454"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="2"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Venda"/>
+				<Prp name="picture" type="S" value="Picture1.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="9"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 1">
+				<Prp name="date" type="D" value="44677.5677571296"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="1"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Tela de Venda Para Cliente' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (80, 28).&#xA;&#xA;Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal', 1).Window('TButton', 'Tela de Venda Para Cliente', 3)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="7"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 0">
+				<Prp name="date" type="D" value="44677.5677457523"/>
+				<Prp name="priority" type="I" value="400"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="0"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\prog17\Desktop\Loja\Project1.exe&quot;. New instances will not be launched."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="0"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="line no" type="I" value="2"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="units">
+				<Prp name="unit 0" type="S" value="{9B43FB77-A136-43A9-857C-587EB61A8943}"/>
+				<Prp name="unit 1" type="S" value="{570CA80E-D599-4D68-8B17-4723D324AF69}"/>
+			</Node>
+			<Node name="message 14">
+				<Prp name="date" type="D" value="44677.5677955556"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="14"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'OK' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 13).&#xA;&#xA;Sys.Process('Project1').Window('TMessageForm', 'Project1', 1).Window('TButton', 'OK', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="55"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 13">
+				<Prp name="date" type="D" value="44677.5677943982"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="13"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Excluir' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TButton', 'Excluir', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="54"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 12">
+				<Prp name="date" type="D" value="44677.5677928935"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="12"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TMaskEdit', '_____-___', 2)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="31"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 11">
+				<Prp name="date" type="D" value="44677.5677918518"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="11"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TMaskEdit', '___.___.___-__', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="30"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 10">
+				<Prp name="date" type="D" value="44677.567789537"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="10"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Keyboard input."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroVenda', 'frCadastroVenda', 1).Window('TEdit', '', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="29"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Prp name="project" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="test moniker" type="S" value="{30446C8B-B50E-4372-B0AB-B515F8801DCA}pMensagemExcluir"/>
+			<Prp name="name" type="S" value="Test Log [tCadastroVenda\pMensagemExcluir]"/>
+			<Prp name="status" type="I" value="1"/>
+		</Node>
+		<Prp name="data type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="children"/>
+			<Node name="message 9">
+				<Prp name="date" type="D" value="44676.7093984143"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="9"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Consulta de Compra"/>
+				<Prp name="picture" type="S" value="Picture4.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="73"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 8">
+				<Prp name="date" type="D" value="44676.7093856829"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="8"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Consultar' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TButton', 'Consultar', 2)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="71"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 7">
+				<Prp name="date" type="D" value="44676.709384294"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="7"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Compra"/>
+				<Prp name="picture" type="S" value="Picture3.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="11"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 6">
+				<Prp name="date" type="D" value="44676.7093716782"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="6"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Tela de Compra de Fornecedor' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (80, 28).&#xA;&#xA;Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal', 1).Window('TButton', 'Tela de Compra de Fornecedor', 4)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="9"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 5">
+				<Prp name="date" type="D" value="44676.7093687847"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="5"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Exportar Dados' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (44, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrConsultaCompra', 'frConsultaCompra', 1).Window('TButton', 'Exportar Dados', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="88"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 4">
+				<Prp name="date" type="D" value="44676.7093675116"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="4"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Consulta de Compra"/>
+				<Prp name="picture" type="S" value="Picture2.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="73"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 3">
+				<Prp name="date" type="D" value="44676.7093550116"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="3"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Consultar' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TButton', 'Consultar', 2)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="71"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 2">
+				<Prp name="date" type="D" value="44676.7093535069"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="2"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Compra"/>
+				<Prp name="picture" type="S" value="Picture1.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="11"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 1">
+				<Prp name="date" type="D" value="44676.7093411227"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="1"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Tela de Compra de Fornecedor' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (80, 28).&#xA;&#xA;Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal', 1).Window('TButton', 'Tela de Compra de Fornecedor', 4)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="9"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 0">
+				<Prp name="date" type="D" value="44676.7093376505"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="0"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The application &quot;C:\Users\prog17\Desktop\Loja\Project1.exe&quot; started."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="0"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="0"/>
+				<Prp name="line no" type="I" value="2"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="units">
+				<Prp name="unit 0" type="S" value="{9B43FB77-A136-43A9-857C-587EB61A8943}"/>
+				<Prp name="unit 1" type="S" value="{7E52FEA3-DDDC-423A-9683-2978BFE6CB52}"/>
+			</Node>
+			<Node name="message 19">
+				<Prp name="date" type="D" value="44676.7094485301"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="19"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Script execution was interrupted."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="3"/>
+				<Prp name="line no" type="I" value="71"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 18">
+				<Prp name="date" type="D" value="44676.7094485301"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="18"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Consultar' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TButton', 'Consultar', 2)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="71"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 17">
+				<Prp name="date" type="D" value="44676.7094441319"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="17"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Compra"/>
+				<Prp name="picture" type="S" value="Picture7.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="11"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 16">
+				<Prp name="date" type="D" value="44676.7094318634"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="16"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Tela de Compra de Fornecedor' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (80, 28).&#xA;&#xA;Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal', 1).Window('TButton', 'Tela de Compra de Fornecedor', 4)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="9"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 15">
+				<Prp name="date" type="D" value="44676.7094293171"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="15"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Exportar Dados' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (44, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrConsultaCompra', 'frConsultaCompra', 1).Window('TButton', 'Exportar Dados', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="88"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 14">
+				<Prp name="date" type="D" value="44676.7094281597"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="14"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Consulta de Compra"/>
+				<Prp name="picture" type="S" value="Picture6.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="73"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 13">
+				<Prp name="date" type="D" value="44676.7094157755"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="13"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Consultar' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (37, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TButton', 'Consultar', 2)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="71"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 12">
+				<Prp name="date" type="D" value="44676.7094143866"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="12"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="Imagem da Tela de Compra"/>
+				<Prp name="picture" type="S" value="Picture5.bmp"/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value=""/>
+				<Prp name="type" type="I" value="4"/>
+				<Prp name="line no" type="I" value="11"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 11">
+				<Prp name="date" type="D" value="44676.7094021181"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="11"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Tela de Compra de Fornecedor' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (80, 28).&#xA;&#xA;Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal', 1).Window('TButton', 'Tela de Compra de Fornecedor', 4)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="9"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Node name="message 10">
+				<Prp name="date" type="D" value="44676.7093995718"/>
+				<Prp name="priority" type="I" value="300"/>
+				<Prp name="owner id" type="I" value="-1"/>
+				<Prp name="color" type="I" value="-252645136"/>
+				<Prp name="id" type="I" value="10"/>
+				<Prp name="bkcolor" type="I" value="-252645136"/>
+				<Prp name="message" type="S" value="The 'Exportar Dados' button was clicked with the left mouse button."/>
+				<Prp name="picture" type="S" value=""/>
+				<Prp name="link" type="S" value=""/>
+				<Prp name="unit id" type="I" value="1"/>
+				<Prp name="remarks" type="S" value="A click at point (44, 12).&#xA;&#xA;Sys.Process('Project1').Window('TfrConsultaCompra', 'frConsultaCompra', 1).Window('TButton', 'Exportar Dados', 1)"/>
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="line no" type="I" value="88"/>
+				<Prp name="child index" type="I" value="-1"/>
+			</Node>
+			<Prp name="project" type="S" value="{91391BC3-F4E0-40B6-8BC8-421F8DB4EFDE}"/>
+			<Prp name="test moniker" type="S" value="{0964DECC-EA5A-41EA-9E37-4B91298A7D3F}pComparaStringList"/>
+			<Prp name="name" type="S" value="Test Log [tCadastroCompra\pComparaStringList]"/>
+			<Prp name="status" type="I" value="2"/>
+		</Node>
+		<Prp name="data type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+	</Node>
+</Nodes>

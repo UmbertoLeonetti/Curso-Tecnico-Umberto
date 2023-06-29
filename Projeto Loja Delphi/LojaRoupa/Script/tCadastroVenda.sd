@@ -1,0 +1,42 @@
+uses
+  uUtil,
+  uCadastroVenda;
+  
+procedure pCadastroVendaRoupa;
+begin
+  pAbrirTelaVenda;
+  pCadastroCampos('123', 'Nike', 'G', 'Algodão', '51', 'Marrom', 'Camiseta', 'João', '65617750070', '64067230');
+  pFecharTelaVenda;
+end;
+
+procedure pCampoCodigo;
+begin
+  pAbrirTelaVenda;                   
+  pCampoCodigoVazio;
+  pFecharTelaVenda;
+end;
+
+procedure pCarregaCampos;
+begin
+  pAbrirTelaVenda;
+  pCarregaCodigo;
+  pFecharTelaVenda;
+end;
+
+procedure pMensagemAdicionar;
+begin
+  pAbrirTelaVenda;
+  pCadastroCampos('123', 'Nike', 'G', 'Algodão', '51', 'Marrom', 'Camiseta', 'João', '65617750070', '64067230');
+  pMensagemAdic;
+  BuiltIn.Delay(2000);
+  pFecharTelaVenda; 
+end;
+
+procedure pMensagemExcluir;
+begin
+  pAbrirTelaVenda;
+  pCadastroCampos('123', '', '', '', '', '', '','', '', '');
+  pMensagemExc;
+  BuiltIn.Delay(2000);
+  pFecharTelaVenda;
+end;

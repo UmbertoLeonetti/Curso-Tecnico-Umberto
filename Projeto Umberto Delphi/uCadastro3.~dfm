@@ -1,0 +1,5 @@
+inherited frCadastroPadrao1: TfrCadastroPadrao1
+  Caption = 'frCadastroPadrao1'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

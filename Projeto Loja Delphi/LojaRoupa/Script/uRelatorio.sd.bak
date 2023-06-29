@@ -1,0 +1,108 @@
+uses
+  uCadastroCompra,
+  uUtil,
+  tCadastroCompra,
+  uCadastroVenda,
+  tCadastroVenda;
+  
+procedure pRelatorio;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+  w1 := p1.Window('TfrRelatorio', 'o', 1);
+  w2 := w1.Window('TGroupBox', 'Filtrar pelo Tamanho');
+  w2.Click(32, 26);
+  w2.Window('TCheckBox', 'P').ClickButton(cbChecked);
+  w2.Click(19, 81);
+  w2.Window('TCheckBox', 'M').ClickButton(cbChecked);
+  w1.Window('TRadioGroup', 'rgRadioGroup').Window('TGroupButton', 'Código').ClickButton;
+  w2.Window('TCheckBox', '38').ClickButton(cbChecked);
+  w2 := w1.Window('TGroupBox', 'Filtrar por Data e Campos');
+  w2.Window('TMaskEdit', '__/__/____', 2).Click(4, 12);
+  w2.Window('TButton', 'Gerar Relatório').ClickButton;
+end;
+
+procedure pDataVazio;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+  p1.Window('TfrRelatorio', 'o', 1).Window('TGroupBox', 'Filtrar por Data e Campos').Window('TButton', 'Gerar Relatório').ClickButton;
+  w1 := p1.Window('TfrxPreviewForm', 'Visualizar').Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 1);
+  w1.VScroll.Pos := 0;
+  w1.Click(301, 37);
+end;
+
+procedure pMes0405;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+  w1 := p1.Window('TfrRelatorio', 'o', 1).Window('TGroupBox', 'Filtrar por Data e Campos');
+  w1.Window('TMaskEdit', '__/__/____', 2).Keys('01042022[Tab]');
+  w1.Window('TMaskEdit', '__/__/____', 1).Keys('31052022');
+  w1.Click(317, 226);
+  w1.Window('TButton', 'Gerar Relatório').ClickButton;
+  w1 := p1.Window('TfrxPreviewForm', 'Visualizar').Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 1);
+  w1.VScroll.Pos := 0;
+  w1.Click(294, 44);
+end;
+
+
+procedure pMes0102;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+  w1 := p1.Window('TfrRelatorio', 'o', 1).Window('TGroupBox', 'Filtrar por Data e Campos');
+  w1.Window('TMaskEdit', '__/__/____', 2).Keys('01012022[Tab]');
+  w1.Window('TMaskEdit', '__/__/____', 1).Keys('28022022');
+  w1.Window('TButton', 'Gerar Relatório').ClickButton;
+  w1 := p1.Window('TfrxPreviewForm', 'Visualizar').Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 1);
+  w1.VScroll.Pos := 0;
+  w1.Click(287, 35);
+end;
+
+procedure pMes101121;  
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+  w1 := p1.Window('TfrRelatorio', 'o', 1).Window('TGroupBox', 'Filtrar por Data e Campos');
+  w1.Window('TMaskEdit', '__/__/____', 2).Keys('01102021[Tab]');
+  w1.Window('TMaskEdit', '__/__/____', 1).Keys('3112[BS]12021');
+  w1.Window('TButton', 'Gerar Relatório').ClickButton;
+  w1 := p1.Window('TfrxPreviewForm', 'Visualizar').Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 1);
+  w1.VScroll.Pos := 0;
+  w1.Click(296, 35);
+end;
+
+
+
+
+
+
+
+
+procedure pBotaoGerarRelatorio;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrRelatorio', 'o', 1).Window('TGroupBox', 'Filtrar por Data e Campos').Window('TButton', 'Gerar Relatório').ClickButton;
+  w1 := p1.Window('TfrxPreviewForm', 'Visualizar').Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 1);
+  w1.VScroll.Pos := 0;
+  w1.Click(288, 39);
+end;
+
+procedure pAbrirRelatorio;
+begin
+  Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Relatório Compra').ClickButton;
+end;

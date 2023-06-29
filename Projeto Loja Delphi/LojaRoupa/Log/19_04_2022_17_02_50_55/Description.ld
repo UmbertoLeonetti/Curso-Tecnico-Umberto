@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Prp name="start time" type="D" value="44670.7103015625"/>
+		<Prp name="test type" type="S" value="LojaRoupa"/>
+		<Prp name="stop time" type="D" value="44670.7104590625"/>
+		<Prp name="error count" type="I" value="0"/>
+		<Prp name="warning count" type="I" value="1"/>
+		<Prp name="root logdata name" type="S" value="Compra Log"/>
+		<Prp name="completed" type="B" value="-1"/>
+		<Prp name="computer name" type="S" value="PROG17"/>
+		<Prp name="status" type="I" value="1"/>
+		<Prp name="user name" type="S" value="prog17"/>
+	</Node>
+</Nodes>

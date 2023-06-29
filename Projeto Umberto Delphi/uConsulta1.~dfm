@@ -1,0 +1,5 @@
+inherited frPadraoConsulta1: TfrPadraoConsulta1
+  Caption = 'frConsulta1'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

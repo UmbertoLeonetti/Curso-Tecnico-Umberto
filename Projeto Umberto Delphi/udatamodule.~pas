@@ -1,0 +1,30 @@
+unit udatamodule;
+
+interface
+
+uses
+  SysUtils, Classes, DB, DBTables;
+
+type
+  TDataModule1 = class(TDataModule)
+    tbCadastro1: TTable;
+    dsCadastro1: TDataSource;
+    DataSource2: TDataSource;
+    Table2: TTable;
+    tbCadastro1bdCodigo: TIntegerField;
+    tbCadastro1bdNome: TStringField;
+    tbCadastro1dbTamanho: TIntegerField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{$R *.dfm}
+
+end.

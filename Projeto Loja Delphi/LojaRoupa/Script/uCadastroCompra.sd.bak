@@ -1,0 +1,94 @@
+uses uUtil;
+
+procedure pCadastroCompra;
+begin
+  pAbrirProjeto;
+end;
+      
+procedure pAbrirTelaCompra;
+begin
+  Sys.Process('Project1').Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Tela de Compra de Fornecedor').ClickButton;
+  BuiltIn.Delay(1000);
+  Log.Picture(Sys.Desktop.Picture(), 'Imagem da Tela de Compra');
+end;
+
+procedure pFecharTelaCompra;
+begin
+  Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Close;
+end;
+
+procedure pCadastroCampos(prCod: String, prMarca: String, prTamanho: String, prEstilo: String, prQuantidade: String, prCor: String, prTipo: String, prValor: String, prNomeFor: String, prCNPJ: String, prData: String);
+  var w1 : OleVariant;
+begin
+  w1 := Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1);
+  w1.Window('TEdit', '', 7).Keys(prCod + '[Tab]');
+  w1.Window('TEdit', '', 6).Keys(prMarca + '[Tab]');
+  w1.Window('TEdit', '', 5).Keys(prTamanho + '[Tab]');
+  w1.Window('TEdit', '', 4).Keys(prEstilo + '[Tab]');
+  w1.Window('TEdit', '', 3).Keys(prQuantidade + '[Tab]');
+  w1.Window('TComboBox', '', 2).Window('Edit').Keys(prCor + '[Tab]');
+  w1.Window('TComboBox', '', 1).Window('Edit').Keys(prTipo + '[Tab]');
+  w1.Window('TEdit', '', 2).Keys(prValor + '[Tab]');
+  w1.Window('TEdit', '', 1).Keys(prNomeFor + '[Tab]');
+  w1.Window('TMaskEdit', '__.___.___/____-__').Keys(prCNPJ + '[Tab]');
+  w1.Window('TMaskEdit', '__/__/____').Keys(prData + '[Tab]');
+end;
+
+procedure pCampoCodigoVazi;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TEdit', '', 7).Keys('[Tab]');
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;               
+end;
+
+procedure pMensagemAdic;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra').Window('TButton', 'Adicionar').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pMensagemExcl;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TEdit', '', 7).Keys('123, [Tab]');  
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra').Window('TButton', 'Excluir').ClickButton;
+  p1.Window('TMessageForm', 'Project1').Window('TButton', 'OK').ClickButton;
+end;
+
+procedure pCarregaCodigo;
+  var p1 : OleVariant;
+begin
+  p1 := Sys.Process('Project1');
+  p1.Window('TfrPrincipal', 'frPrincipal').Window('TButton', 'Tela de Compra de Fornecedor').ClickButton;
+  p1.Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TEdit', '', 7).Keys('1[Tab]');
+end;
+
+procedure pAbrirTelaConsultaCompra;
+begin
+  Sys.Process('Project1').Window('TfrCadastroCompra', 'frCadastroCompra', 1).Window('TButton', 'Consultar', 2).ClickButton;
+  BuiltIn.Delay(1000);     
+  Log.Picture(Sys.Desktop.Picture(), 'Imagem da Tela de Consulta de Compra');       
+end;
+
+procedure pFecharTelaConsultaCompra;
+begin
+  Sys.Process('Project1').Window('TfrConsultaCompra', 'frConsultaCompra', 1).Close;
+end;
+
+
+procedure pExportarDadosCompra;
+begin
+  Sys.Process('Project1').Window('TfrConsultaCompra', 'frConsultaCompra', 1).Window('TButton', 'Exportar Dados').ClickButton;
+end;
+
+procedure pComparaStringList(prAntiga: String, prNova: String);
+begin
+  Files.Compare('C:\Users\prog17\Desktop\Loja\Tabelas\StringListCompraAntiga.txt', 'C:\Users\prog17\Desktop\Loja\Tabelas\StringListCompra.txt');
+end;
+
+
+
